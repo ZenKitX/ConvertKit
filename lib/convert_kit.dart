@@ -38,3 +38,6 @@ export 'src/hex.dart';
 export 'src/percent.dart';
 export 'src/percent/decoder.dart' show percentDecoder;
 export 'src/percent/encoder.dart' show percentEncoder;
+
+// 导出身份编解码器
+export 'src/identity_codec.dart';
