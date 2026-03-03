@@ -1,0 +1,38 @@
+include: package:lints/recommended.yaml
+
+linter:
+  rules:
+    # 代码风格
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - avoid_print
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    
+    # 文档
+    - public_member_api_docs
+    
+    # 最佳实践
+    - avoid_redundant_argument_values
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    
+    # 错误预防
+    - avoid_empty_else
+    - cancel_subscriptions
+    - close_sinks
+
+analyzer:
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - 'reference_convert/**'
+  
+  errors:
+    # 将某些警告视为错误
+    missing_required_param: error
+    missing_return: error
