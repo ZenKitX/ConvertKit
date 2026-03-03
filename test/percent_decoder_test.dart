@@ -240,7 +240,7 @@ void main() {
       test('使用 addSlice 方法', () {
         const data1 = 'AB%20';
         const data2 = 'CD';
-        
+
         sink.addSlice(data1, 0, 5, false); // "AB%20"
         expect(
           results,

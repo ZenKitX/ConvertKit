@@ -44,7 +44,8 @@ void _benchmarkEncode(String name, List<int> data, int iterations) {
   stopwatch.stop();
   final totalMs = stopwatch.elapsedMilliseconds;
   final avgMs = totalMs / iterations;
-  final throughput = (data.length * iterations) / (totalMs / 1000) / 1024 / 1024;
+  final throughput =
+      (data.length * iterations) / (totalMs / 1000) / 1024 / 1024;
 
   print('$name:');
   print('  总时间: ${totalMs}ms');
@@ -84,7 +85,8 @@ void _benchmarkRoundTrip(String name, List<int> data, int iterations) {
   stopwatch.stop();
   final totalMs = stopwatch.elapsedMilliseconds;
   final avgMs = totalMs / iterations;
-  final throughput = (data.length * iterations) / (totalMs / 1000) / 1024 / 1024;
+  final throughput =
+      (data.length * iterations) / (totalMs / 1000) / 1024 / 1024;
 
   print('$name:');
   print('  总时间: ${totalMs}ms');

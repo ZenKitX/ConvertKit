@@ -55,6 +55,22 @@ void main() {
 
 更多示例请查看 [example](example/) 目录。
 
+## 性能基准测试
+
+ConvertKit 提供了完整的性能基准测试套件，用于评估各模块的性能表现。
+
+运行基准测试：
+
+```bash
+# 十六进制编解码
+dart run benchmark/hex_benchmark.dart
+
+# 百分号编解码
+dart run benchmark/percent_benchmark.dart
+```
+
+详细信息请查看 [benchmark](benchmark/) 目录。
+
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！

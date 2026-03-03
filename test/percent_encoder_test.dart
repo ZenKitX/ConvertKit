@@ -13,7 +13,8 @@ void main() {
       final safeChars = 'abcdefghijklmnopqrstuvwxyz'
           'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
           '0123456789-._~';
-      expect(percentEncoder.convert([...safeChars.codeUnits]), equals(safeChars));
+      expect(
+          percentEncoder.convert([...safeChars.codeUnits]), equals(safeChars));
     });
 
     test('编码保留的 ASCII 字符', () {
@@ -78,8 +79,10 @@ void main() {
     });
 
     test('拒绝混合有效和无效字节', () {
-      expect(() => percentEncoder.convert([65, 66, 256]), throwsFormatException);
-      expect(() => percentEncoder.convert([0x100, 65, 66]), throwsFormatException);
+      expect(
+          () => percentEncoder.convert([65, 66, 256]), throwsFormatException);
+      expect(
+          () => percentEncoder.convert([0x100, 65, 66]), throwsFormatException);
     });
 
     group('分块转换', () {

@@ -209,7 +209,8 @@ void main() {
     group('与编码器互操作', () {
       test('应该能解码编码器的输出', () {
         final original = [0, 1, 2, 255, 254, 253];
-        final hex = original.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
+        final hex =
+            original.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
         final decoded = decoder.convert(hex);
 
         expect(decoded, equals(original));
@@ -224,7 +225,8 @@ void main() {
 
       test('应该处理 UTF-8 字节序列', () {
         final original = utf8.encode('你好');
-        final hex = original.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
+        final hex =
+            original.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
         final decoded = decoder.convert(hex);
 
         expect(decoded, equals(original));
@@ -246,7 +248,8 @@ void main() {
       });
 
       test('应该解码重复模式', () {
-        expect(decoder.convert('aabbccaabbcc'), equals([0xAA, 0xBB, 0xCC, 0xAA, 0xBB, 0xCC]));
+        expect(decoder.convert('aabbccaabbcc'),
+            equals([0xAA, 0xBB, 0xCC, 0xAA, 0xBB, 0xCC]));
       });
     });
 

@@ -170,7 +170,8 @@ void main() {
         const intIdentity = IdentityCodec<int>();
 
         // 它们是不同的类型
-        expect(stringIdentity.runtimeType, isNot(equals(intIdentity.runtimeType)));
+        expect(
+            stringIdentity.runtimeType, isNot(equals(intIdentity.runtimeType)));
       });
     });
   });
