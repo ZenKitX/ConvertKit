@@ -1,6 +1,6 @@
 name: convert_kit
 description: 数据转换工具包，提供多种编解码器和格式化工具
-version: 0.1.0
+version: 0.2.0
 repository: https://github.com/yourusername/convert_kit
 
 environment:

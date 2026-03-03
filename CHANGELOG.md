@@ -5,7 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2026-01-XX
+## [0.2.0] - 2026-03-03
+
+### Added
+- 完整的项目文档（调研文档、开发计划、提案文档）
+- 使用示例文件 example/example.dart
+- 参考仓库链接
+
+### Fixed
+- 移除未使用的导入
+
+### Changed
+- 完善 README 和 CHANGELOG
+
+## [0.1.0] - 2026-03-03
 
 ### Added
 - 十六进制编解码器（HexCodec, HexEncoder, HexDecoder）

@@ -66,3 +66,5 @@ void main() {
 ## 致谢
 
 本项目受 Dart 官方 [convert](https://pub.dev/packages/convert) 包启发。
+
+参考仓库：[dart-lang/convert](https://github.com/dart-lang/convert)
