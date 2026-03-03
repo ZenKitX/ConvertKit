@@ -26,12 +26,10 @@
 /// ```
 library convert_kit;
 
-// 导出将在后续 commit 中逐步添加
-// export 'src/accumulator_sink.dart';
-// export 'src/byte_accumulator_sink.dart';
-// export 'src/string_accumulator_sink.dart';
-// export 'src/hex.dart';
-// export 'src/percent.dart';
-// export 'src/codepage.dart';
-// export 'src/fixed_datetime_formatter.dart';
-// export 'src/identity_codec.dart';
+// 导出累加器
+export 'src/accumulator_sink.dart';
+export 'src/byte_accumulator_sink.dart';
+export 'src/string_accumulator_sink.dart';
+
+// 导出十六进制编解码器
+export 'src/hex.dart';
