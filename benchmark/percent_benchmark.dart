@@ -14,7 +14,7 @@ void main() {
   final largeData = List.generate(100000, (i) => 65 + (i % 26));
 
   // 包含特殊字符的数据
-  final specialData = 'Hello World! 你好世界 @#\$%^&*()'.codeUnits;
+  final specialData = 'Hello World! @#\$%^&*()'.codeUnits;
 
   // 编码基准测试
   print('--- 编码性能 ---');
