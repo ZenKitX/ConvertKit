@@ -33,3 +33,8 @@ export 'src/string_accumulator_sink.dart';
 
 // 导出十六进制编解码器
 export 'src/hex.dart';
+
+// 导出百分号编解码器
+export 'src/percent.dart';
+export 'src/percent/decoder.dart' show percentDecoder;
+export 'src/percent/encoder.dart' show percentEncoder;
