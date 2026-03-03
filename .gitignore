@@ -27,5 +27,3 @@ coverage/
 .test_coverage.dart
 
 # Documentation
-doc/api/
-reference_convert/*
